@@ -2,6 +2,10 @@
 @import "./scss/mixins";
 @import "./scss/glogalStyles";
 
+@import "./scss/components/navbar";
+
+@import "./scss/pages/homePage";
+
 *,
 *::before,
 *::after {

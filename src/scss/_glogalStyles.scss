@@ -8,20 +8,34 @@ ul {
 
 .primary-btn {
   background-color: $color-green-primary;
-  color: $color-whte;
+  color: $color-white;
   border-radius: 0.5rem;
 }
 
 .secondary-btn {
-  background-color: $color-whte;
+  background-color: $color-white;
   color: $color-text-primary;
   border-radius: 0.5rem;
 }
 
 .navbar-btn {
   background-color: $color-text-primary;
-  color: $color-whte;
+  color: $color-white;
   border-radius: 0.5rem;
+  padding: 1rem 3rem;
+  border: 0.1rem solid $color-white;
+  transition: $hover-transition;
+
+  &:hover {
+    background-color: $color-white;
+    color: $color-black;
+    border: 0.1rem solid $color-black;
+  }
+}
+
+.navbar-active-page {
+  color: $color-black !important;
+  font-weight: $font-weight-bold;
 }
 
 .container {
