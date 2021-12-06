@@ -1,0 +1,35 @@
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.primary-btn {
+  background-color: $color-green-primary;
+  color: $color-whte;
+  border-radius: 0.5rem;
+}
+
+.secondary-btn {
+  background-color: $color-whte;
+  color: $color-text-primary;
+  border-radius: 0.5rem;
+}
+
+.navbar-btn {
+  background-color: $color-text-primary;
+  color: $color-whte;
+  border-radius: 0.5rem;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+
+  @media only screen and (min-width: $media-query-desktop) {
+    width: 100%;
+    max-width: 128rem;
+  }
+}

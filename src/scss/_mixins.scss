@@ -1,0 +1,44 @@
+@mixin home-heading {
+  font-weight: $font-weight-bold;
+  font-size: $font-size-64;
+}
+
+@mixin heading-one {
+  font-weight: $font-weight-bold;
+  font-size: $font-size-56;
+}
+
+@mixin heading-two {
+  font-weight: $font-weight-bold;
+  font-size: $font-size-48;
+}
+
+@mixin heading-three {
+  font-weight: $font-weight-bold;
+  font-size: $font-size-28;
+}
+
+@mixin heading-four {
+  font-weight: $font-weight-bold;
+  font-size: $font-size-20;
+}
+
+@mixin heading-five {
+  font-weight: $font-weight-bold;
+  font-size: $font-size-14;
+}
+
+@mixin heading-six {
+  font-weight: $font-weight-bold;
+  font-size: $font-size-12;
+}
+
+@mixin paragraph-normal {
+  font-weight: $font-weight-normal;
+  font-size: $font-size-16;
+}
+
+@mixin paragraph-small {
+  font-weight: $font-weight-normal;
+  font-size: $font-size-14;
+}
