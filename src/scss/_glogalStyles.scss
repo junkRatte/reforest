@@ -10,12 +10,26 @@ ul {
   background-color: $color-green-primary;
   color: $color-white;
   border-radius: 0.5rem;
+  padding: 1rem 3rem;
+  transition: $hover-transition;
+
+  &:hover {
+    background-color: $color-white;
+    color: $color-green-primary;
+  }
 }
 
 .secondary-btn {
   background-color: $color-white;
   color: $color-text-primary;
   border-radius: 0.5rem;
+  padding: 1rem 3rem;
+
+  transition: $hover-transition;
+  &:hover {
+    background-color: $color-text-primary;
+    color: $color-white;
+  }
 }
 
 .navbar-btn {

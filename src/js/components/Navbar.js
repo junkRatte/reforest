@@ -1,21 +1,12 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import disableScroll from "disable-scroll";
+import ReforestLogo from "../../images/reforest-logo.svg";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
-  const [isScrollDisabled, setIsScrollDisabled] = useState(false);
 
   const toggleMenu = () => {
     setOpenMenu(!openMenu);
-
-    disableScroll[isScrollDisabled ? "off" : "on"]();
-    setIsScrollDisabled(!isScrollDisabled);
-  };
-
-  const closeMenuNavLink = () => {
-    setOpenMenu(false);
-    disableScroll[isScrollDisabled ? "off" : "on"]();
   };
 
   return (
@@ -23,8 +14,7 @@ const Navbar = () => {
       <div className="container">
         <div className="navbar">
           <div className="navbar-logo">
-            <p>ReForest</p>
-            <i class="fas fa-tree"></i>
+            <img src={ReforestLogo} alt="Company logo" />
           </div>
           <div className="navbar-menu">
             <div
@@ -44,7 +34,7 @@ const Navbar = () => {
             >
               <NavLink
                 to="/"
-                onClick={closeMenuNavLink}
+                onClick={toggleMenu}
                 className={({ isActive }) =>
                   isActive ? "navbar-active-page" : null
                 }
@@ -53,7 +43,7 @@ const Navbar = () => {
               </NavLink>
               <NavLink
                 to="/about-us"
-                onClick={closeMenuNavLink}
+                onClick={toggleMenu}
                 className={({ isActive }) =>
                   isActive ? "navbar-active-page" : null
                 }
@@ -62,7 +52,7 @@ const Navbar = () => {
               </NavLink>
               <NavLink
                 to="/projects"
-                onClick={closeMenuNavLink}
+                onClick={toggleMenu}
                 className={({ isActive }) =>
                   isActive ? "navbar-active-page" : null
                 }
@@ -71,7 +61,7 @@ const Navbar = () => {
               </NavLink>
               <NavLink
                 to="/news"
-                onClick={closeMenuNavLink}
+                onClick={toggleMenu}
                 className={({ isActive }) =>
                   isActive ? "navbar-active-page" : null
                 }
@@ -80,14 +70,14 @@ const Navbar = () => {
               </NavLink>
               <NavLink
                 to="/contact-us"
-                onClick={closeMenuNavLink}
+                onClick={toggleMenu}
                 className={({ isActive }) =>
                   isActive ? "navbar-active-page" : null
                 }
               >
                 <li>Contact</li>
               </NavLink>
-              <NavLink to="/donations" onClick={closeMenuNavLink}>
+              <NavLink to="/donations" onClick={toggleMenu}>
                 <li className="navbar-btn">Donate</li>
               </NavLink>
             </ul>

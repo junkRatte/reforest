@@ -1,6 +1,14 @@
 @mixin home-heading {
   font-weight: $font-weight-bold;
-  font-size: $font-size-64;
+  font-size: $font-size-28;
+
+  @media only screen and (min-width: $media-query-tablet) {
+    font-size: $font-size-48;
+  }
+
+  @media only screen and (min-width: $media-query-laptop) {
+    font-size: $font-size-64;
+  }
 }
 
 @mixin heading-one {

@@ -1,2 +1,98 @@
 header {
+  position: relative;
+  background-image: url("../../images/homepage-forest-image.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  color: $color-white;
+  display: flex;
+  align-items: center;
+
+  @media only screen and (min-width: $media-query-laptop) {
+    background-image: none;
+  }
+
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+    display: none;
+    filter: brightness(60%);
+
+    @media only screen and (min-width: $media-query-laptop) {
+      display: unset;
+      max-height: 100vh !important;
+    }
+  }
+
+  .homepage-title {
+    h1 {
+      @include home-heading;
+      margin-bottom: 5rem;
+
+      @media only screen and (min-width: $media-query-laptop) {
+        line-height: 7.7rem;
+      }
+    }
+
+    &-buttons {
+      a.secondary-btn {
+        font-size: $font-size-16;
+        font-weight: bold;
+        margin-right: 4rem;
+        padding: 1.5rem 3rem;
+      }
+
+      .video-btn {
+        display: none;
+        background: none;
+        border: none;
+        color: $color-white;
+        font-size: 2rem;
+        vertical-align: middle;
+
+        @media only screen and (min-width: $media-query-laptop) {
+          display: unset;
+        }
+
+        i {
+          margin-right: 1rem;
+        }
+      }
+    }
+
+    &-statistics {
+      margin-top: 5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @media only screen and (min-width: $media-query-desktop) {
+        margin-top: 20rem;
+      }
+
+      p {
+        font-size: $font-size-12;
+
+        @media only screen and (min-width: $media-query-tablet) {
+          font-size: $font-size-16;
+        }
+
+        @media only screen and (min-width: $media-query-laptop) {
+          font-size: $font-size-20;
+        }
+      }
+
+      span {
+        display: block;
+        border-bottom: 0.1rem solid $color-border;
+        flex-grow: 1;
+        margin: 0 2rem;
+      }
+    }
+  }
 }

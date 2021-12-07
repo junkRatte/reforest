@@ -5,19 +5,8 @@
   align-items: center;
 
   &-logo {
-    display: flex;
-    align-items: center;
-
-    p {
-      color: $color-text-primary;
-      font-weight: bold;
-      font-size: $font-size-16;
-      margin-right: 0.5rem;
-    }
-
-    i {
-      font-size: $font-size-14;
-      color: $color-green-primary;
+    img {
+      width: 50%;
     }
   }
 
@@ -29,7 +18,7 @@
         cursor: pointer;
       }
 
-      @media only screen and (min-width: $media-query-tablet) {
+      @media only screen and (min-width: $media-query-laptop) {
         display: none;
       }
 
@@ -51,6 +40,7 @@
       position: absolute;
       right: 10%;
       top: 5%;
+      z-index: 3;
       transition: all 0.3s;
       background-color: $color-white;
       border-radius: 1rem;
@@ -64,7 +54,7 @@
       font-size: $font-size-16;
       padding: 2rem 0;
 
-      @media only screen and (min-width: $media-query-tablet) {
+      @media only screen and (min-width: $media-query-laptop) {
         visibility: visible;
         opacity: 1;
         position: relative;
@@ -120,7 +110,7 @@
   visibility: hidden;
   opacity: 0;
 
-  @media only screen and (min-width: $media-query-tablet) {
+  @media only screen and (min-width: $media-query-laptop) {
     visibility: visible;
     opacity: 1;
   }
