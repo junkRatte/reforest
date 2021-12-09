@@ -68,8 +68,12 @@ ul {
 span.heading-line {
   width: 7rem;
   height: 0.2rem;
-  display: block;
+  display: none;
   background-color: $color-text-primary;
   margin-right: 2.4rem;
   margin-top: 1rem;
+
+  @media only screen and (min-width: $media-query-tablet) {
+    display: block;
+  }
 }
