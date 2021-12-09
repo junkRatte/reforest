@@ -1,0 +1,88 @@
+.homepage-aboutus {
+  padding-bottom: 6rem;
+
+  &-summary {
+    margin-bottom: 6rem;
+
+    @media only screen and (min-width: $media-query-tablet) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      column-gap: 9rem;
+    }
+
+    .summary-text {
+      display: flex;
+
+      span.heading-line {
+        display: none;
+
+        @media only screen and (min-width: $media-query-tablet) {
+          display: initial;
+        }
+      }
+
+      h4 {
+        @include heading-four;
+        text-transform: uppercase;
+        color: $color-text-primary;
+        margin-bottom: 3rem;
+      }
+
+      h2 {
+        @include heading-two;
+        color: $color-text-primary;
+        margin-bottom: 3rem;
+      }
+
+      p {
+        @include paragraph-normal;
+        color: $color-text-secondary;
+        margin-bottom: 5rem;
+      }
+    }
+
+    .summary-image {
+      margin-top: 5rem;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  &-logos {
+    h4 {
+      @include paragraph-normal;
+      color: $color-text-primary;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 0.2rem;
+      display: flex;
+      align-items: center;
+      margin-bottom: 3rem;
+
+      &::after {
+        content: "";
+        display: block;
+        height: 0.1rem;
+        background-color: $color-border;
+        flex-grow: 1;
+        margin-left: 2rem;
+      }
+    }
+
+    .logos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 2rem;
+
+      @media only screen and (min-width: $media-query-tablet) {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}

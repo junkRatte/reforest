@@ -17,7 +17,7 @@ const HomePageHeader = () => {
   };
 
   return (
-    <header>
+    <header className="homepage-header">
       <video muted ref={videoRef}>
         <source src={ForestVideo} type="video/mp4" />
       </video>

@@ -1,6 +1,6 @@
 header {
   position: relative;
-  background-image: url("../../images/homepage-forest-image.jpg");
+  background-image: url("../../../images/homepage-forest-image.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -8,9 +8,11 @@ header {
   color: $color-white;
   display: flex;
   align-items: center;
+  margin-bottom: 10rem;
 
   @media only screen and (min-width: $media-query-laptop) {
     background-image: none;
+    margin-bottom: 20rem;
   }
 
   video {

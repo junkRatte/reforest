@@ -6,11 +6,22 @@ ul {
   list-style: none;
 }
 
+.container {
+  width: 90%;
+  margin: 0 auto;
+
+  @media only screen and (min-width: $media-query-desktop) {
+    width: 100%;
+    max-width: 128rem;
+  }
+}
+
 .primary-btn {
   background-color: $color-green-primary;
   color: $color-white;
+  font-size: $font-size-16;
   border-radius: 0.5rem;
-  padding: 1rem 3rem;
+  padding: 1.5rem 3rem;
   transition: $hover-transition;
 
   &:hover {
@@ -22,8 +33,9 @@ ul {
 .secondary-btn {
   background-color: $color-white;
   color: $color-text-primary;
+  font-size: $font-size-16;
   border-radius: 0.5rem;
-  padding: 1rem 3rem;
+  padding: 1.5rem 3rem;
 
   transition: $hover-transition;
   &:hover {
@@ -35,8 +47,9 @@ ul {
 .navbar-btn {
   background-color: $color-text-primary;
   color: $color-white;
+  font-size: $font-size-16;
   border-radius: 0.5rem;
-  padding: 1rem 3rem;
+  padding: 1.5rem 3rem;
   border: 0.1rem solid $color-white;
   transition: $hover-transition;
 
@@ -52,12 +65,11 @@ ul {
   font-weight: $font-weight-bold;
 }
 
-.container {
-  width: 90%;
-  margin: 0 auto;
-
-  @media only screen and (min-width: $media-query-desktop) {
-    width: 100%;
-    max-width: 128rem;
-  }
+span.heading-line {
+  width: 7rem;
+  height: 0.2rem;
+  display: block;
+  background-color: $color-text-primary;
+  margin-right: 2.4rem;
+  margin-top: 1rem;
 }
