@@ -1,0 +1,91 @@
+.homepage-work {
+  background-color: $color-green-tertiary;
+  padding: 9.5rem 0;
+
+  &-summary {
+    @media only screen and (min-width: $media-query-tablet) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      column-gap: 9rem;
+    }
+
+    .summary-text {
+      display: flex;
+
+      h4 {
+        @include heading-four;
+        text-transform: uppercase;
+        color: $color-text-primary;
+        margin-bottom: 3rem;
+      }
+
+      h2 {
+        @include heading-two;
+        color: $color-text-primary;
+        margin-bottom: 3rem;
+      }
+
+      p {
+        @include paragraph-normal;
+        color: $color-text-secondary;
+      }
+
+      ul {
+        border-left: 0.1rem solid $color-border;
+        padding-left: 2.5rem;
+        margin-top: 3rem;
+
+        li {
+          display: flex;
+          align-items: flex-start;
+
+          &:not(:last-child) {
+            margin-bottom: 2.5rem;
+          }
+
+          img {
+            margin-right: 2.5rem;
+            margin-top: 0.5rem;
+            display: none;
+
+            @media only screen and (min-width: $media-query-tablet) {
+              display: block;
+            }
+          }
+
+          h3 {
+            @include heading-three;
+            color: $color-text-primary;
+            font-weight: $font-weight-bold;
+            margin-bottom: 0.8rem;
+          }
+
+          p {
+            @include paragraph-normal;
+
+            @media only screen and (min-width: $media-query-tablet) {
+              width: 70%;
+            }
+          }
+        }
+      }
+    }
+
+    .summary-image {
+      margin-top: 5rem;
+
+      @media only screen and (min-width: $media-query-tablet) {
+        margin-top: 3;
+      }
+
+      img {
+        width: 100%;
+
+        @media only screen and (min-width: $media-query-desktop) {
+          min-height: 66rem;
+        }
+      }
+    }
+  }
+}

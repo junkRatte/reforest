@@ -1,0 +1,48 @@
+.homepage-projects-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+
+  .project-card {
+    color: $color-white;
+    height: 42rem;
+    width: 100%;
+    max-width: 41rem;
+    position: relative;
+    border-radius: 1rem;
+    padding: 8rem 5rem;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 1rem;
+    }
+
+    &-content {
+      position: relative;
+      z-index: 3;
+      height: 100%;
+
+      h3 {
+        @include heading-three;
+        line-height: 4rem;
+        margin-bottom: 2rem;
+      }
+
+      p {
+        @include paragraph-normal;
+        margin-bottom: 7rem;
+      }
+
+      a {
+        font-weight: $font-weight-bold;
+      }
+    }
+  }
+}
