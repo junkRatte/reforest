@@ -23,18 +23,13 @@ const HomePageAboutUs = () => {
             </h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse varius enim in
-              <br />
-              eros elementum tristique.
+              Suspendisse varius enim in eros elementum tristique.
               <br />
               <br />
               Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
-              commodo diam
-              <br />
-              libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum
-              lorem imperdiet.
-              <br />
-              Nunc ut sem vitae risus tristique posuere.
+              commodo diam libero vitae erat. Aenean faucibus nibh et justo
+              cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus
+              tristique posuere.
             </p>
             <Link to="/about-us" className="primary-btn">
               Learn more

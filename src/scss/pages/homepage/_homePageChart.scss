@@ -1,0 +1,88 @@
+.homepage-chart {
+  padding: $section-padding;
+  background-color: $color-black;
+
+  .wrapper {
+    @media only screen and (min-width: $media-query-tablet) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .homepage-chart-text {
+      @media only screen and (min-width: $media-query-tablet) {
+        width: 50%;
+      }
+
+      h2 {
+        @include heading-two;
+        color: $color-white;
+        line-height: 2.5rem;
+        margin-bottom: 1.5rem;
+
+        @media only screen and (min-width: $media-query-tablet) {
+          line-height: 6rem;
+        }
+      }
+
+      p {
+        @include paragraph-normal;
+        color: $color-text-secondary;
+        margin-bottom: 3rem;
+      }
+
+      ul {
+        line-height: 3rem;
+
+        @media only screen and (min-width: $media-query-laptop) {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 2.5rem;
+        }
+
+        li {
+          color: $color-white;
+          display: flex;
+          align-items: center;
+          column-gap: 0.8rem;
+          font-size: $font-size-16;
+
+          &::before {
+            content: "";
+            display: block;
+            width: 1.6rem;
+            height: 1.6rem;
+            border-radius: 0.4rem;
+          }
+
+          &:nth-child(1)::before {
+            background-color: $color-green-secondary;
+          }
+          &:nth-child(2)::before {
+            background-color: #ac94f1;
+          }
+          &:nth-child(3)::before {
+            background-color: #fff0ca;
+          }
+          &:nth-child(4)::before {
+            background-color: #f9cf64;
+          }
+          &:nth-child(5)::before {
+            background-color: #f38fbf;
+          }
+        }
+      }
+    }
+
+    .homepage-chart-image {
+      margin-top: 5rem;
+
+      img {
+        width: 100%;
+        max-width: 37.5rem;
+        height: 100%;
+        max-height: 37.5rem;
+      }
+    }
+  }
+}

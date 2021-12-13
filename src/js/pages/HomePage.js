@@ -3,6 +3,7 @@ import HomePageAboutUs from "../sections/homepage/HomePageAboutUs";
 import HomePageHeader from "../sections/homepage/HomePageHeader";
 import HomePageWork from "../sections/homepage/HomePageWork";
 import HomePageProjects from "../sections/homepage/HomePageProjects";
+import HomePageChart from "../sections/homepage/HomePageChart";
 
 const Homepage = () => {
   return (
@@ -11,6 +12,7 @@ const Homepage = () => {
       <HomePageAboutUs />
       <HomePageWork />
       <HomePageProjects />
+      <HomePageChart />
     </div>
   );
 };

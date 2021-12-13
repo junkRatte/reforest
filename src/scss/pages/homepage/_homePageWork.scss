@@ -1,6 +1,6 @@
 .homepage-work {
   background-color: $color-green-tertiary;
-  padding: 9.5rem 0;
+  padding: $section-padding;
 
   &-summary {
     @media only screen and (min-width: $media-query-tablet) {
