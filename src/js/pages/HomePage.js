@@ -4,6 +4,7 @@ import HomePageHeader from "../sections/homepage/HomePageHeader";
 import HomePageWork from "../sections/homepage/HomePageWork";
 import HomePageProjects from "../sections/homepage/HomePageProjects";
 import HomePageChart from "../sections/homepage/HomePageChart";
+import VolunteerSignUp from "../components/VolunteerSignUp";
 
 const Homepage = () => {
   return (
@@ -13,6 +14,7 @@ const Homepage = () => {
       <HomePageWork />
       <HomePageProjects />
       <HomePageChart />
+      <VolunteerSignUp />
     </div>
   );
 };

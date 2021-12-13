@@ -1,0 +1,87 @@
+.modal {
+  border-radius: 0.8rem;
+  background-color: $color-white;
+  z-index: 10;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 4.8rem 4.8rem 4.8rem;
+  width: 100%;
+  max-width: 64rem;
+  height: 100%;
+  overflow: scroll;
+
+  @media only screen and (min-width: $media-query-tablet) {
+    max-height: 68rem;
+  }
+
+  i {
+    align-self: flex-end;
+    font-size: $font-size-28;
+    cursor: pointer;
+  }
+
+  h2 {
+    @include heading-two;
+    margin-bottom: 1.6rem;
+  }
+
+  p {
+    @include paragraph-small;
+    color: $color-text-secondary;
+    margin-bottom: 3rem;
+  }
+
+  form {
+    .form-row {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      @media only screen and (min-width: $media-query-tablet) {
+        flex-direction: row;
+
+        label {
+          width: 45%;
+        }
+      }
+    }
+
+    label {
+      font-size: $font-size-12;
+      color: $color-text-primary;
+    }
+
+    input {
+      width: 100%;
+      display: flex;
+      border: none;
+      border-bottom: 0.1rem solid $color-border;
+      padding: 1rem;
+      margin-bottom: 3rem;
+    }
+
+    textarea {
+      border: 0.1rem solid $color-border;
+      color: $color-text-primary;
+      font-size: $font-size-16;
+      width: 100%;
+      height: 100%;
+      max-height: 15.6rem;
+      padding: 2rem;
+      margin-top: 1rem;
+      margin-bottom: 3rem;
+    }
+
+    input.submit {
+      width: auto;
+      border: none;
+      cursor: pointer;
+      font-size: $font-size-16;
+      padding: 1.5rem 3rem;
+    }
+  }
+}
