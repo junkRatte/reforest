@@ -79,3 +79,10 @@ span.heading-line {
     display: block;
   }
 }
+
+span.cards-heading-line {
+  width: 100%;
+  height: 0.1rem;
+  display: block;
+  background-color: $color-border;
+}

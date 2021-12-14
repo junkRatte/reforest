@@ -1,0 +1,12 @@
+.news-cards-heading {
+  display: flex;
+  align-items: center;
+  column-gap: 2.5rem;
+  margin-bottom: 5rem;
+
+  h3 {
+    @include heading-three;
+    width: 100%;
+    max-width: 20rem;
+  }
+}

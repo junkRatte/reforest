@@ -5,7 +5,7 @@ import AboutPage from "../pages/AboutPage";
 import ProjectsPage from "../pages/ProjectsPage";
 import ProjectPostPage from "../pages/ProjectPostPage";
 import NewsPage from "../pages/NewsPage";
-import BlogPostPage from "../pages/BlogPostPage";
+import NewsPostPage from "../pages/NewsPostPage";
 import ContactPage from "../pages/ContactPage";
 import DonationPage from "../pages/DonationPage";
 import EventPostPage from "../pages/EventPostPage";
@@ -19,7 +19,7 @@ const RoutesComponent = () => {
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/projects/:title" element={<ProjectPostPage />} />
         <Route path="/news" element={<NewsPage />} />
-        <Route path="/blog/:title" element={<BlogPostPage />} />
+        <Route path="/news/:title/:id" element={<NewsPostPage />} />
         <Route path="/contact-us" element={<ContactPage />} />
         <Route path="/donations" element={<DonationPage />} />
         <Route path="/event/:title" element={<EventPostPage />} />

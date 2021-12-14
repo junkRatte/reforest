@@ -1,0 +1,37 @@
+.news-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3.5rem;
+
+  .news-card {
+    width: 100%;
+    max-width: 29.3rem;
+    transition: $hover-transition;
+
+    &:hover {
+      box-shadow: 0 1.5rem 1rem -1rem $color-border;
+      transform: translateY(-0.3rem);
+    }
+
+    img {
+      width: 100%;
+      max-width: 30rem;
+      height: 100%;
+      max-height: 19rem;
+      margin-bottom: 1.6rem;
+    }
+
+    h4 {
+      @include heading-four;
+      margin-bottom: 1rem;
+      color: $color-text-primary;
+    }
+
+    p {
+      @include paragraph-normal;
+      color: $color-text-secondary;
+      margin-bottom: 1rem;
+    }
+  }
+}
