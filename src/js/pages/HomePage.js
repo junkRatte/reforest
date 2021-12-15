@@ -7,6 +7,7 @@ import HomePageChart from "../sections/homepage/HomePageChart";
 import VolunteerSignUp from "../components/VolunteerSignUp";
 import NewsCards from "../components/NewsCards";
 import NewsCardsHeading from "../components/NewsCardsHeading";
+import Events from "../components/Events";
 
 const Homepage = () => {
   return (
@@ -19,6 +20,7 @@ const Homepage = () => {
       <VolunteerSignUp />
       <NewsCardsHeading />
       <NewsCards />
+      <Events />
     </div>
   );
 };
