@@ -1,0 +1,79 @@
+.footer {
+  background-color: $color-black;
+  padding: $section-padding;
+
+  .footer-wrapper {
+    @media only screen and (min-width: $media-query-laptop) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    img {
+      margin-bottom: 3rem;
+
+      @media only screen and (min-width: $media-query-laptop) {
+        margin-bottom: 0;
+      }
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 3rem;
+
+      @media only screen and (min-width: $media-query-laptop) {
+        gap: 5rem;
+        margin-bottom: 0;
+      }
+
+      @media only screen and (min-width: $media-query-desktop) {
+        gap: 9rem;
+      }
+
+      p {
+        @include paragraph-normal;
+        color: $color-white;
+        font-weight: $font-weight-bold;
+        margin-bottom: 2rem;
+      }
+
+      ul {
+        line-height: 2.5rem;
+
+        li {
+          @include paragraph-small;
+          color: $color-text-secondary;
+
+          @media only screen and (min-width: $media-query-laptop) {
+            line-height: 2.5rem;
+          }
+
+          a {
+            color: $color-text-secondary;
+          }
+        }
+      }
+    }
+
+    h3 {
+      @include heading-three;
+      color: $color-white;
+      margin-bottom: 3rem;
+    }
+
+    input.email-input {
+      padding: 2rem;
+      border-radius: 0.4rem;
+      border: 0.1rem solid rgba(235, 240, 249, 0.3);
+      background-color: $color-black;
+      color: $color-white;
+      font-size: $font-size-16;
+      margin-bottom: 1rem;
+    }
+
+    input.secondary-btn {
+      padding: 2rem;
+    }
+  }
+}
