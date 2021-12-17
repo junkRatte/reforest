@@ -1,0 +1,40 @@
+.aboutpage-awards-badges {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  margin-bottom: 9rem;
+
+  @media only screen and (min-width: $media-query-tablet) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .badge {
+    text-align: center;
+
+    img {
+      margin-bottom: 1.5rem;
+    }
+
+    h5 {
+      font-weight: $font-weight-bold;
+      font-size: $font-size-24;
+      color: $color-text-primary;
+      margin-bottom: 1.5rem;
+    }
+
+    span {
+      font-weight: $font-weight-bold;
+      font-size: $font-size-16;
+      color: $color-text-primary;
+    }
+
+    p {
+      color: $color-text-primary;
+      text-transform: uppercase;
+      font-size: $font-size-12;
+      margin-top: 1.5rem;
+    }
+  }
+}

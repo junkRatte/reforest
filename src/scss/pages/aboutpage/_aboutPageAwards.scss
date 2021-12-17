@@ -1,0 +1,10 @@
+.aboutpage-awards {
+  width: 100%;
+
+  h2 {
+    @include heading-two;
+    color: $color-text-primary;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+}
