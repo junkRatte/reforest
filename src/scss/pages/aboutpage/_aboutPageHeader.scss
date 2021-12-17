@@ -1,0 +1,125 @@
+.aboutpage-header {
+  padding: $section-padding;
+
+  &-title {
+    padding-bottom: 10rem;
+    position: relative;
+
+    @media only screen and (min-width: $media-query-tablet) {
+      display: flex;
+      padding-bottom: 32rem;
+    }
+
+    h5 {
+      @include heading-five;
+      text-transform: uppercase;
+      color: $color-text-primary;
+      margin-bottom: 3rem;
+    }
+
+    h1 {
+      @include heading-one;
+      color: $color-text-primary;
+    }
+
+    p {
+      @include paragraph-normal;
+      color: $color-text-primary;
+      margin-bottom: 5rem;
+
+      @media only screen and (min-width: $media-query-tablet) {
+        width: 60%;
+        margin-top: 6.5rem;
+        margin-bottom: 0;
+      }
+
+      span {
+        font-weight: $font-weight-bold;
+      }
+    }
+
+    img {
+      width: 100%;
+
+      @media only screen and (min-width: $media-query-tablet) {
+        position: absolute;
+        bottom: -20%;
+      }
+
+      @media only screen and (min-width: $media-query-laptop) {
+        position: absolute;
+        bottom: -35%;
+      }
+    }
+  }
+
+  .green-bg {
+    background-color: $color-green-tertiary;
+    padding: 10rem 0;
+
+    @media only screen and (min-width: $media-query-tablet) {
+      padding: 32rem 0 10rem 0;
+    }
+  }
+
+  &-columns {
+    @media only screen and (min-width: $media-query-tablet) {
+      display: flex;
+      gap: 9rem;
+    }
+
+    @media only screen and (min-width: $media-query-laptop) {
+      padding: 0 9rem;
+      margin-bottom: 9rem;
+    }
+
+    h5 {
+      @include heading-five;
+      color: $color-text-primary;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      @include heading-three;
+      color: $color-text-primary;
+      margin-bottom: 1rem;
+      line-height: 2rem;
+      text-transform: uppercase;
+
+      @media only screen and (min-width: $media-query-tablet) {
+        line-height: 4rem;
+      }
+    }
+
+    p {
+      @include paragraph-normal;
+      color: $color-text-primary;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &-logos {
+    h4 {
+      @include paragraph-normal;
+      color: $color-text-primary;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 0.2rem;
+      margin-bottom: 3rem;
+    }
+
+    .logos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 2rem;
+
+      @media only screen and (min-width: $media-query-tablet) {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
