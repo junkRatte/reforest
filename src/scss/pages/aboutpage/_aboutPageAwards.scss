@@ -1,10 +1,76 @@
 .aboutpage-awards {
   width: 100%;
+  margin-bottom: 10rem;
 
   h2 {
     @include heading-two;
     color: $color-text-primary;
     text-align: center;
     margin-bottom: 5rem;
+  }
+
+  &-team {
+    padding: 6rem 0 6rem 3rem;
+    background-color: $color-black;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+
+    @media only screen and (min-width: $media-query-tablet) {
+      flex-direction: row;
+      align-items: center;
+      padding: 6rem 0 6rem 9rem;
+    }
+
+    @media only screen and (min-width: $media-query-desktop) {
+      border-radius: 1.2rem;
+    }
+
+    .team-description {
+      h5 {
+        @include heading-five;
+        color: $color-white;
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
+      }
+
+      h2 {
+        @include heading-two;
+        color: $color-white;
+        margin-bottom: 1.5rem;
+        text-align: left;
+      }
+
+      p {
+        @include paragraph-small;
+        color: $color-white;
+        opacity: 60%;
+      }
+
+      span {
+        font-size: $font-size-24;
+        font-weight: medium;
+        color: $color-white;
+      }
+
+      &-stats {
+        margin-top: 3rem;
+
+        @media only screen and (min-width: $media-query-tablet) {
+          display: flex;
+          gap: 3rem;
+        }
+      }
+    }
+
+    .team-image {
+      img {
+        width: 100%;
+
+        @media only screen and (min-width: $media-query-desktop) {
+          width: initial;
+        }
+      }
+    }
   }
 }
