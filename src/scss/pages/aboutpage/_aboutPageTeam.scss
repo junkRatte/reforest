@@ -1,0 +1,59 @@
+.aboutpage-team {
+  text-align: center;
+  margin-bottom: 10rem;
+
+  h2 {
+    @include heading-two;
+    color: $color-text-primary;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    @include paragraph-normal;
+    color: $color-text-secondary;
+    opacity: 60%;
+    margin-bottom: 5rem;
+  }
+
+  .team-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 3rem;
+    row-gap: 5rem;
+
+    .team-member-info {
+      img {
+        margin-bottom: 1.5rem;
+      }
+
+      h4 {
+        @include heading-four;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        color: $color-text-primary;
+        font-size: $font-size-12;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+      }
+
+      ul {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+
+        a {
+          font-size: $font-size-20;
+          color: $color-text-primary;
+          transition: $hover-transition;
+
+          &:hover {
+            color: $color-green-primary;
+          }
+        }
+      }
+    }
+  }
+}
