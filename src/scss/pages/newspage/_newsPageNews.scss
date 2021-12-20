@@ -1,0 +1,19 @@
+.newspage-news {
+  padding: $section-padding;
+
+  &-title {
+    text-align: center;
+
+    h2 {
+      @include heading-two;
+      color: $color-text-primary;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      @include paragraph-normal;
+      color: $color-text-secondary;
+      margin-bottom: 4rem;
+    }
+  }
+}
