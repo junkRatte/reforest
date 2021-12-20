@@ -1,0 +1,44 @@
+.projectspage-header {
+  padding: $section-padding;
+
+  &-title {
+    @media only screen and (min-width: $media-query-tablet) {
+      display: flex;
+    }
+
+    h5 {
+      @include heading-five;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      margin-bottom: 3rem;
+      color: $color-text-primary;
+    }
+
+    h1 {
+      @include heading-one;
+      color: $color-text-primary;
+      margin-bottom: 3rem;
+    }
+
+    p {
+      @include paragraph-normal;
+      color: $color-text-secondary;
+      margin-bottom: 5rem;
+
+      @media only screen and (min-width: $media-query-laptop) {
+        margin-bottom: 0;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .title-image-wrapper {
+      @media only screen and (min-width: $media-query-laptop) {
+        display: flex;
+        gap: 10rem;
+      }
+    }
+  }
+}
