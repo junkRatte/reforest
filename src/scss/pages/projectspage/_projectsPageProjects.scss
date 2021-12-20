@@ -1,0 +1,21 @@
+.projectspage-projects {
+  padding: $section-padding;
+
+  &-title {
+    text-align: center;
+    h5 {
+      @include heading-five;
+      color: $color-text-primary;
+      font-weight: $font-weight-bold;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      @include heading-two;
+      color: $color-text-primary;
+      margin-bottom: 6rem;
+    }
+  }
+}
