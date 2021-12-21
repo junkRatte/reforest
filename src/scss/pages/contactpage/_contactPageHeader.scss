@@ -1,0 +1,76 @@
+.contactpage-header {
+  padding: $section-padding;
+  background-color: $color-white-off;
+
+  &-wrapper {
+    @media only screen and (min-width: $media-query-laptop) {
+      display: flex;
+      align-items: flex-start;
+      gap: 9rem;
+    }
+
+    h5 {
+      font-size: $font-size-16;
+      font-weight: $font-weight-bold;
+      letter-spacing: 0.2rem;
+      color: $color-text-primary;
+      text-transform: uppercase;
+      margin-bottom: 3rem;
+    }
+
+    h1 {
+      @include heading-one;
+      color: $color-text-primary;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      @include paragraph-normal;
+      color: $color-text-secondary;
+    }
+
+    .contactpage-header-title {
+      display: flex;
+      width: 100%;
+      max-width: 59rem;
+    }
+
+    .contact-info {
+      margin-top: 4rem;
+
+      @media only screen and (min-width: $media-query-tablet) {
+        margin-top: 0;
+      }
+
+      h4 {
+        font-size: $font-size-24;
+        font-weight: $font-weight-bold;
+        color: $color-text-primary;
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+      }
+
+      a {
+        color: $color-text-primary;
+        font-size: $font-size-16;
+        transition: $hover-transition;
+
+        &:hover {
+          color: $color-green-primary;
+        }
+      }
+
+      ul {
+        margin-top: 3rem;
+        display: flex;
+        gap: 2rem;
+      }
+
+      &-links {
+        a:first-child {
+          margin-right: 3rem;
+        }
+      }
+    }
+  }
+}
