@@ -30,7 +30,7 @@
       margin-bottom: 2.5rem;
 
       .tab {
-        padding: 0.8rem 2.5rem;
+        padding: 0.5rem 1rem;
         border-bottom: 0.1rem solid $color-border;
         cursor: pointer;
         color: $color-text-primary;
@@ -38,6 +38,10 @@
 
         &:hover {
           font-weight: $font-weight-bold;
+        }
+
+        @media only screen and (min-width: $media-query-tablet) {
+          padding: 0.8rem 2.5rem;
         }
       }
 

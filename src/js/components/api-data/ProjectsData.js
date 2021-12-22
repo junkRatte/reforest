@@ -1,6 +1,10 @@
 import PlantationProjectImage from "../../../images/plantation-project-image.png";
 import CleanlinessProjectImage from "../../../images/cleanliness-project-image.png";
 import WildlifeProjectImage from "../../../images/wildlife-project-image.png";
+import DonatedIcon from "../../../images/donated-icon.svg";
+import JoinedIcon from "../../../images/joined-icon.svg";
+import PlantationIcon from "../../../images/plantation-icon.svg";
+import RaisedIcon from "../../../images/raised-icon.svg";
 
 export const ProjectsData = [
   {
@@ -23,15 +27,19 @@ export const ProjectsData = [
     plants_planted: 200,
     plants_planted_summary:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+    plantation_icon: PlantationIcon,
     people_donated: 230,
     people_donated_summary:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+    donated_icon: DonatedIcon,
     people_joined: 30,
     people_joined_summary:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+    joined_icon: JoinedIcon,
     money_raised: 324,
     money_raised_summary:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+    raised_icon: RaisedIcon,
   },
   {
     id: 2,
@@ -53,15 +61,19 @@ export const ProjectsData = [
     plants_planted: 100,
     plants_planted_summary:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+    plantation_icon: PlantationIcon,
     people_donated: 130,
     people_donated_summary:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+    donated_icon: DonatedIcon,
     people_joined: 50,
     people_joined_summary:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+    joined_icon: JoinedIcon,
     money_raised: 800,
     money_raised_summary:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+    raised_icon: RaisedIcon,
   },
   {
     id: 3,
@@ -82,14 +94,18 @@ export const ProjectsData = [
     plants_planted: 300,
     plants_planted_summary:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+    plantation_icon: PlantationIcon,
     people_donated: 350,
     people_donated_summary:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+    donated_icon: DonatedIcon,
     people_joined: 150,
     people_joined_summary:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+    joined_icon: JoinedIcon,
     money_raised: 2400,
     money_raised_summary:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+    raised_icon: RaisedIcon,
   },
 ];
