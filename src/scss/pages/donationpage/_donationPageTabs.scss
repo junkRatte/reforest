@@ -1,0 +1,86 @@
+.donationpage-tabs {
+  padding: $section-padding;
+  display: flex;
+  flex-direction: column;
+  gap: 9rem;
+  border-bottom: 0.1rem solid $color-border;
+
+  @media only screen and (min-width: $media-query-desktop) {
+    flex-direction: row;
+  }
+
+  &-description {
+    max-width: 60rem;
+    h2 {
+      @include heading-two;
+      color: $color-text-primary;
+      margin-bottom: 2.5rem;
+    }
+
+    p {
+      @include paragraph-small;
+      color: $color-text-secondary;
+    }
+  }
+
+  &-tabs {
+    max-width: 60rem;
+    .tab-blocks {
+      display: flex;
+      margin-bottom: 2.5rem;
+
+      .tab {
+        padding: 0.8rem 2.5rem;
+        border-bottom: 0.1rem solid $color-border;
+        cursor: pointer;
+        color: $color-text-primary;
+        font-size: $font-size-16;
+
+        &:hover {
+          font-weight: $font-weight-bold;
+        }
+      }
+
+      .active-tab {
+        font-weight: $font-weight-bold;
+        border-bottom: 0.2rem solid $color-green-primary;
+      }
+    }
+
+    .tab-content {
+      .content {
+        display: none;
+        p {
+          @include paragraph-normal;
+          color: $color-text-secondary;
+        }
+      }
+
+      .active-content {
+        display: block;
+      }
+    }
+  }
+}
+
+.dontationpage-donation-usage {
+  padding: $section-padding;
+  display: flex;
+  flex-direction: column;
+  gap: 9rem;
+
+  @media only screen and (min-width: $media-query-tablet) {
+    flex-direction: row;
+  }
+
+  h2 {
+    @include heading-two;
+    color: $color-text-primary;
+  }
+
+  p {
+    @include paragraph-normal;
+    color: $color-text-secondary;
+    max-width: 34rem;
+  }
+}
