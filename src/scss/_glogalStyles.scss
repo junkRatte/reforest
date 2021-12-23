@@ -36,6 +36,16 @@ ul {
   }
 }
 
+.event-container {
+  width: 90%;
+  margin: 0 auto;
+
+  @media only screen and (min-width: $media-query-laptop) {
+    width: 100%;
+    max-width: 76rem;
+  }
+}
+
 .primary-btn {
   background-color: $color-green-primary;
   color: $color-white;
