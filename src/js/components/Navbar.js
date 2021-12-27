@@ -33,7 +33,7 @@ const Navbar = () => {
               }`}
             >
               <NavLink
-                to="/"
+                to="/reforest"
                 onClick={toggleMenu}
                 className={({ isActive }) =>
                   isActive ? "navbar-active-page" : null
