@@ -13,7 +13,7 @@ import EventPostPage from "../pages/EventPostPage";
 const RoutesComponent = () => {
   return (
     <>
-      <Routes>
+      <Routes basename={process.env.PUBLIC_URL}>
         <Route path="/" element={<HomePage />} />
         <Route path="/about-us" element={<AboutPage />} />
         <Route path="/projects" element={<ProjectsPage />} />
