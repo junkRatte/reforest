@@ -14,7 +14,7 @@ const RoutesComponent = () => {
   return (
     <>
       <Routes basename={process.env.PUBLIC_URL}>
-        <Route path="/reforest" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/about-us" element={<AboutPage />} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/projects/:title" element={<ProjectPostPage />} />
